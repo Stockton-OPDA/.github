@@ -39,17 +39,17 @@ Replace `https://github.com/organization/repository.git` with the HTTPS link to 
 2. Clone the forked repository to your local machine
 3. Create a new branch for your changes:
    ```bash
-   git checkout -b name/my-feature
+   git checkout -b dev/name/my-feature
    ```
 4. Make changes and commit them:
    ```bash
-   git add your_file
+   git add your_file(s)
    git commit -m "your_message"
    ```
-   Replace `your_file` and `"your_message"` accordingly
+   Replace `your_file(s)` and `"your_message"` accordingly
 5. Push your changes to your fork:
    ```bash
-   git push origin name/my-feature
+   git push origin dev/name/my-feature
    ```
 6. Open a pull request on the original repository and fill out the template accordingly
 
