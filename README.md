@@ -2,12 +2,12 @@
 
 Welcome to the City of Stockton Office of Performance & Data Analytics Github! Before you begin, make sure you have the following installed on your system:
 
-- Git (Download and install from [https://git-scm.com/](https://git-scm.com/))
+- Git (Download and install from [https://git-scm.com/](https://git-scm.com/) - usually comes preinstalled on Mac)
 - A coding editor of your choice
 
 ## Initial Configuration Steps
 
-### Step 1: Configure HTTP SSL Backend
+### Step 1: Configure HTTP SSL backend
 
 To configure Git with `http.sslBackend` set to `schannel`, run the following command in your terminal:
 
@@ -15,15 +15,29 @@ To configure Git with `http.sslBackend` set to `schannel`, run the following com
 git config --global http.sslBackend schannel
 ```
 
-### Step 2: Set Git User Email
+### Step 2: Set Git user email and Username
 
-Set your Git user email to your work email address using the following command. This includes the --system flag to configure Git to always use your work email address for Git commands on this system:
+If prompted, set your Git user email / username to your work email address / name using the following command. The global flag changes your git config across all repositories for the machine.
 
 ```bash
-git config user.email "your-email@stocktonca.gov" --system
+git config user.email "your-email@stocktonca.gov" --global
+git config user.name "First Last" --global
 ```
 
-Replace `"your-email@stocktonca.gov"` with your actual Stockton email address.
+Replace `"your-email@stocktonca.gov"` and `"First Last"` accordingly. 
+
+### Optional: Set pip.ini config
+
+If using python, you will need to edit the pip.ini to allow package installation. Add the following lines to your pip.ini, or create it if necessary:
+
+```bash
+[global]
+trusted-host = pypi.python.org
+               pypi.org
+               files.pythonhosted.org
+```
+
+[View documentation](https://pip.pypa.io/en/stable/topics/configuration/) for locating your pip.ini.
 
 ## Cloning a Repository
 
