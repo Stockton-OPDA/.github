@@ -20,8 +20,8 @@ git config --global http.sslBackend schannel
 If prompted, set your Git user email / username to your work email address / name using the following command. The global flag changes your git config across all repositories for the machine.
 
 ```bash
-git config user.email "your-email@stocktonca.gov" --global
-git config user.name "First Last" --global
+git config --global user.email "your-email@stocktonca.gov"
+git config --global user.name "First Last"
 ```
 
 Replace `"your-email@stocktonca.gov"` and `"First Last"` accordingly. 
